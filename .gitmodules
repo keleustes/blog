@@ -1,0 +1,10 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:keleustes/keleustes.github.io.git
+	branch = master
+[submodule "themes/hugo-future-imperfect"]
+	path = themes/hugo-future-imperfect
+	url = git@github.com:jpescador/hugo-future-imperfect.git
+[submodule "themes/hugo-theme-learn"]
+	path = themes/hugo-theme-learn
+	url = https://github.com/matcornic/hugo-theme-learn.git
