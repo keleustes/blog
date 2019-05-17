@@ -1,6 +1,6 @@
 and = "https://keleustes.github.io/"
 languageCode = "en-us"
-title = "KUBEDGE's Blog"
+title = "KELEUSTES's Blog"
 # theme = "hugo-future-imperfect"
 theme = "hugo-theme-learn"
 preserveTaxonomyNames = true
@@ -24,7 +24,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Author of the site, will be used in meta information
   author = "Keleustes Team"
   # Description of the site, will be used in meta information
-  description = "KUBEDGE" # Description of your site
+  description = "KELEUSTES" # Description of your site
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar

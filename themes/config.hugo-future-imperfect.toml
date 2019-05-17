@@ -1,6 +1,6 @@
 and = "https://keleustes.github.io/"
 languageCode = "en-us"
-title = "KUBEDGE's Blog"
+title = "KELEUSTES's Blog"
 # theme = "hugo-future-imperfect"
 theme = "hugo-theme-learn"
 preserveTaxonomyNames = true
@@ -15,7 +15,7 @@ canonifyURLs = true
 
 [params]
   # Sets the meta tag description
-  description = "KUBEDGE's Blog" # Description of your site
+  description = "KELEUSTES's Blog" # Description of your site
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Building your own learning local edge network"
   # Sets where "View More Posts" links
@@ -90,7 +90,7 @@ canonifyURLs = true
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "KUBEDGE's Blog"
+  header    = "KELEUSTES's Blog"
   paragraph = "5G Edge Network Simulator"
   about     = "About the author"
 
