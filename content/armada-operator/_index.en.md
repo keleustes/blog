@@ -10,8 +10,8 @@ chapter = true
 
 ## Rationale
 
-Investigate the feasability of converting airship-armada functions 
-into a Kubernetes operator pattern
+- Investigate the feasibility of converting airship-armada functions 
+  into a Kubernetes operator pattern
 
 ## Documentation
 

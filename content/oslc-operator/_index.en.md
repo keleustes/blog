@@ -10,8 +10,13 @@ chapter = true
 
 ## Rationale
 
-Create a Kubernetes Operator able to orchestrate draining traffic, upgrading,
-testing, traffic rollout...
+- Create a Kubernetes Operator able to orchestrate draining traffic, upgrading,
+  testing, traffic rollout...
+- The main lesson learned from this POC is the ability to use the helm rendering
+  to provide a unified way of delivering scripts onto a platform and at
+  runtime selectively decide which part of the chart to render according to the
+  state of the service which lifecycle may not match exactly the lifecycle of a
+  helm chart (i.e install, upgrade, rollback, delete).
 
 ## Documentation
 

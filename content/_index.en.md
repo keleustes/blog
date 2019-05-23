@@ -7,6 +7,7 @@ chapter = true
 
 # Keleustes
 
-![](/images/raspberrypi/IMG_0339.JPG)
+- The projects listed here are POC intended to help make educated decisions
+  for the implementation of OpenInfrastructure Airship project.
 
 

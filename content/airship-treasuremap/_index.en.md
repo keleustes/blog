@@ -10,8 +10,9 @@ chapter = true
 
 ## Rationale
 
-Investigate the feasability of converting airship-treasuremap site descriptions
-into kustomize site descriptions (Kubernetes CRD based)
+- Investigate the feasibility of converting airship-treasuremap site descriptions
+  into kustomize site descriptions (Kubernetes CRD based).
+- The kustomize layering are beeing leverage (global, type, site).
 
 ## Documentation
 
