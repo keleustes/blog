@@ -1,6 +1,6 @@
 +++
 title = "Kustomize"
-description = "This is the kustomize blueprint page"
+description = "This is the keleustes kustomize POC page"
 weight = 5
 pre = "<b>1. </b>"
 chapter = true
@@ -20,6 +20,19 @@ chapter = true
   Still the real syntax check will be performed into helmv3 since it verifies the syntax
   of the values obtained from layering the "override" values on top of the "default" values
   provided in the chart.
+- This is not a "replacement" for airship deckhand. This POC merely aims
+  at highlighting the potential advantages and pitfall in going in that
+  direction.
+
+## Lessons Learned
+
+### Layering
+
+- TBD
+
+### Substitutions
+
+- TBD
 
 ## Documentation
 

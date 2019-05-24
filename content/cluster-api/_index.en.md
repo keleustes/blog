@@ -1,6 +1,6 @@
 +++
-title = "cluster-api"
-description = "This is cluster-api POC page"
+title = "Cluster-API"
+description = "This is the keleustes cluyster-api POC page"
 weight = 30
 pre = "<b>5. </b>"
 chapter = true
@@ -18,6 +18,24 @@ chapter = true
   - How much of Promenade is still relevant. cluster-api indeed helping to save the kubeadm token into configmaps to help
     machine to join.
   - Can kustomize be used to build the cluster-api MachineList and Cluster CRDs from Airship Site definitions.
+- This is not a "replacement" for airship drydock. This POC merely aims
+  at highlighting the potential advantages and pitfall in going in that
+  direction.
+
+## Lessons Learned
+
+### Baremetal machine greenfield deployment 
+
+- TBD
+
+### Baremetal machine brownfield upgrade and update
+
+- Docker, Kubelet: TBD
+- OS: TBD
+
+### Kubernetes state maintenance
+
+- kubeproxy, api-server,...: TBD
 
 ## Documentation
 

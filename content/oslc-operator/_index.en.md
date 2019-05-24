@@ -1,6 +1,6 @@
 +++
-title = "OpenstackLCM"
-description = "This is openstacklcm-operator blueprint page"
+title = "LifeCycle Manager"
+description = "This is keleustes OpenstackService LifeCycle operator POC"
 weight = 20
 pre = "<b>4. </b>"
 chapter = true
@@ -17,6 +17,20 @@ chapter = true
   runtime selectively decide which part of the chart to render according to the
   state of the service which lifecycle may not match exactly the lifecycle of a
   helm chart (i.e install, upgrade, rollback, delete).
+
+## Lessons Learned
+
+### Multi facet charts
+
+- TBD
+
+### Traffic Draining
+
+- TBD
+
+### ScaleUp / ScaleDown
+
+- TBD
 
 ## Documentation
 
