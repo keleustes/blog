@@ -11,7 +11,7 @@ chapter = true
 ## Rationale
 
 - This POC of a baremetal cluster-api provider was started before the official [cluster-api-provider-baremetal](https://github.com/metal3-io/cluster-api-provider-baremetal)
-- This POC was relying on Airship Drydock/Maas. Thanks to the work done by the the metal3.io team, most of that this POC has become
+- This POC was relying on Airship Drydock/Maas. Thanks to the work done by the metal3.io team, most of content of this POC has become
   irrelevant.
 - The remaining questions that can be kind of answered by this POC are:
   - Is DivingBell still relevant. Is the cluster-api in charge of updating, rebooting machines when the machine specs are updated.
@@ -19,7 +19,7 @@ chapter = true
     machine to join.
   - Can kustomize be used to build the cluster-api MachineList and Cluster CRDs from Airship Site definitions.
 - This is not a "replacement" for airship drydock. This POC merely aims
-  at highlighting the potential advantages and pitfall in going in that
+  to highlight the potential advantages and pitfall in going in that
   direction.
 
 ## Lessons Learned

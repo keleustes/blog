@@ -29,7 +29,10 @@ chapter = true
 
 ### Schema Validation
 
-- TBD
+- Some of the OpenAPI V3 construct are not supported yet by CRDs.
+  - AdditionalProperties are allowed in specific conditions, check [additionalProperties](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/DrydockHostProfile.yaml#L141)
+  - Definitions and Refs are not supported: [definitions](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/PromenadeGenesis.yaml#L36)
+  - AnyOf construct [anyOf](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/PromenadeKubernetesNetwork.yaml#L156)
 
 ## Documentation
 
