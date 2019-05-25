@@ -12,17 +12,27 @@ chapter = true
 
 - Investigate the feasibility of converting promenade functions to kubeadm.
   For that purpose improvments have been made and proposed to the kubeadm community.
-- This is not a "replacement" for airship promenade. This POC merely aims
-  at highlighting the potential advantages and pitfall in going in that
-  direction.
+
+{{% notice warning %}}
+This is not a "replacement" for airship promenade. This POC merely aims to highlight the potential advantages and pitfalls in going in that direction.
+{{% /notice %}}
+
 
 ## Lessons Learned
 
-### Layering
+### Kubernetes High Availibity
 
 - TBD
 
-### Substitutions
+### Certificates Management
+
+- TBD
+
+### Kubernetes Software Upgrade
+
+- TBD
+
+### kubelet, kubeadm and kubectl upgrades
 
 - TBD
 

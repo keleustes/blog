@@ -12,9 +12,10 @@ chapter = true
 
 - Investigate the feasibility of converting shipyard functions to argo.
   For that purpose improvments have been made and proposed to the argo community.
-- This is not a "replacement" for airship shipyard. This POC merely aims
-  at highlighting the potential advantages and pitfall in going in that
-  direction.
+
+{{% notice warning %}}
+This is not a "replacement" for airship shipyard. This POC merely aims to highlight the potential advantages and pitfalls in going in that direction.
+{{% /notice %}}
 
 ## Lessons Learned
 

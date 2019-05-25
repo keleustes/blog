@@ -13,26 +13,46 @@ chapter = true
 - Investigate the feasibility of converting airship-treasuremap site descriptions
   into kustomize site descriptions (Kubernetes CRD based).
 - The kustomize layering are beeing leverage (global, type, site).
-- This is not a "replacement" for airship treasuremap. This POC merely aims
-  at highlighting what would have to be done to adapt treasuremap to tools such
-  as kustomize, argo...
+
+{{% notice warning %}}
+This is not a "replacement" for airship treasuremap. This POC merely aims at highlighting what would have to be done to adapt treasuremap to tools such as kustomize, argo...
+{{% /notice %}}
 
 ## Lessons Learned
 
-### Layering
+### Data Layering, Substitions and Validation
 
-- TBD
+- It is possible to support the current airship layering (global, type, site). The three subfolders have be created.
+  Each kustomization.yaml is using an entry "base". Check [airsloop](https://github.com/keleustes/airship-treasuremap/blob/master/site/airsloop/kustomization.yaml#L5)
 
-### Substitutions
+- kustomize supports variables by default
+  - Regex is using $(xxx) format.
+  - Improvments have been proposed to address what kustomize could not do by default: [PR](https://github.com/kubernetes-sigs/kustomize/pull/1111)
 
-- TBD
+- simple variable: 
+  - Definition in the kustomization.yaml: [global](https://github.com/keleustes/airship-treasuremap/blob/master/global/kustomization.yaml#L1085)
+  - Tree and structure can be inlined: [inline](https://github.com/keleustes/airship-treasuremap/blob/master/global/software/charts/ucp/drydock/maas.yaml#L48)
+  - Variable value extracted from a catalog CRD: [value](https://github.com/keleustes/airship-treasuremap/blob/master/site/airsloop/networks/common-addresses.yaml#L12)
 
-### Schema Validation
+- simple inlining:
+  - Definition in the kustomization.yaml: [global](https://github.com/keleustes/airship-treasuremap/blob/master/global/kustomization.yaml#L2553)
+  - Tree and structure can be inlined: [inline](https://github.com/keleustes/airship-treasuremap/blob/master/global/software/charts/osh/openstack-glance/glance.yaml#L20)
+  - Variable value extracted from a catalog CRD: [value](https://github.com/keleustes/airship-treasuremap/blob/master/global/software/config/versions.yaml#L127)
+
+- parent inlining (for multipass replacement) are currently used the following way:
+  - Definition in the kustomization.yaml: [global](https://github.com/keleustes/airship-treasuremap/blob/master/global/kustomization.yaml#L2089)
+  - Tree and structure can be inlined: [inline](https://github.com/keleustes/airship-treasuremap/blob/master/global/software/charts/osh/openstack-glance/glance.yaml#L130)
+  - Variable value extracted from a catalog CRD: [value](https://github.com/keleustes/airship-treasuremap/blob/master/type/sloop/config/endpoints.yaml#L675)
 
 - Some of the OpenAPI V3 construct are not supported yet by CRDs.
   - AdditionalProperties are allowed in specific conditions, check [additionalProperties](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/DrydockHostProfile.yaml#L141)
   - Definitions and Refs are not supported: [definitions](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/PromenadeGenesis.yaml#L36)
   - AnyOf construct [anyOf](https://github.com/keleustes/airship-treasuremap/blob/master/deploy/crds/PromenadeKubernetesNetwork.yaml#L156)
+
+### Operator experience
+
+- `kubectl get act --all--namespaces` provides the user with a view at a glance of his deployment.
+- TBD
 
 ## Documentation
 

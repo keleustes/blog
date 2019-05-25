@@ -12,9 +12,10 @@ chapter = true
 
 - The projects listed here are POC intended to help make educated decisions
   for the implementation of OpenInfrastructure Airship project.
-- None of thoses POC aimed at replacing for airship components.
-  Those POC merely aim to highlight the potential advantages and pitfalls of
-  choosing one technology versus another.
+
+{{% notice warning %}}
+None of thoses POC aimed at replacing for airship components. Those POC merely aim to highlight the potential advantages and pitfalls of choosing one technology versus another. 
+{{% /notice %}}
 
 ## Airship Design
 

@@ -12,9 +12,11 @@ chapter = true
 
 - Investigate the feasibility of converting airship-armada functions 
   into a Kubernetes operator pattern.
-- This is not a "replacement" for airship armada. This POC merely aims
-  to highlight the potential advantages and pitfall in going in that
-  direction.
+
+{{% notice warning %}}
+This is not a "replacement" for airship armada. This POC merely aims to highlight the potential advantages and pitfalls in going in that direction.
+{{% /notice %}}
+
 
 ## Lessons Learned
 

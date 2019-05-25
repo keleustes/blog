@@ -18,6 +18,12 @@ chapter = true
   state of the service which lifecycle may not match exactly the lifecycle of a
   helm chart (i.e install, upgrade, rollback, delete).
 
+{{% notice note %}}
+The Argo team published since an new subproject to argoproj called argo-rollout which seems really promising.
+Currently rely on replacing the standard StatefulSet by an Argo Rollout deployement object
+{{% /notice %}}
+
+
 ## Lessons Learned
 
 ### Multi facet charts
@@ -35,6 +41,10 @@ chapter = true
 ## Documentation
 
 - [Readme](https://github.com/keleustes/oslc-operator/blob/master/README.md)
+- [Argo CD](https://github.com/argoproj/argo-cd)
+- [Argo Rollout](https://github.com/argoproj/argo-rollouts)
+
+{{< youtube id="yeVkTTO9nOA" autoplay="false" >}}
 
 ## Associated GIT Repos
 

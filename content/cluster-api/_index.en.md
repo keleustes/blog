@@ -18,9 +18,10 @@ chapter = true
   - How much of Promenade is still relevant. cluster-api indeed helping to save the kubeadm token into configmaps to help
     machine to join.
   - Can kustomize be used to build the cluster-api MachineList and Cluster CRDs from Airship Site definitions.
-- This is not a "replacement" for airship drydock. This POC merely aims
-  to highlight the potential advantages and pitfall in going in that
-  direction.
+
+{{% notice warning %}}
+This is not a "replacement" for airship drydock. This POC merely aims to highlight the potential advantages and pitfalls in going in that direction.
+{{% /notice %}}
 
 ## Lessons Learned
 
