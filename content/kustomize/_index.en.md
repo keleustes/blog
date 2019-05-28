@@ -53,6 +53,15 @@ This is not a "replacement" for airship deckhand. This POC merely aims to highli
   - Tree and structure can be inlined: [inline](https://github.com/keleustes/airship-treasuremap/blob/master/global/software/charts/osh/openstack-glance/glance.yaml#L130)
   - Variable value extracted from a catalog CRD: [value](https://github.com/keleustes/airship-treasuremap/blob/master/type/sloop/config/endpoints.yaml#L675)
 
+## Remaining issues
+
+- [Extract from](https://blog.argoproj.io/the-state-of-kubernetes-configuration-management-d8b06c1205)
+
+{{% notice warning %}}
+The Bad:
+No parameters & templates. The same property that makes kustomize applications so readable, can also make it very limiting. For example, I was recently trying to get the kustomize CLI to set an image tag for a custom resource instead of a Deployment, but was unable to. Kustomize does have a concept of “vars,” which look a lot like parameters, but somehow aren’t, and can only be used in Kustomize’s sanctioned whitelist of field paths. I feel like this is one of those times when the solution, despite making the hard things easy, ends up making the easy things hard.
+{{% /notice %}}
+
 ## Documentation
 
 - [ReadTheDocs](https://airshipit.readthedocs.io/projects/deckhand/en/latest/)

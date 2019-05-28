@@ -17,8 +17,14 @@ chapter = true
 This is not a "replacement" for airship armada. This POC merely aims to highlight the potential advantages and pitfalls in going in that direction.
 {{% /notice %}}
 
-
 ## Lessons Learned
+
+### Simular problems discussed by the community
+
+The following links are trying to address similar problems
+
+- [Mirantis AppController](https://github.com/Mirantis/k8s-AppController)
+- [Facilitate API orchestration](https://github.com/kubernetes/kubernetes/issues/34363)
 
 ### CRD usages
 
@@ -109,4 +115,3 @@ deployed through `helm install` or `helm upgrade` are ready to be used.
 
 <!--more-->
 
-{{%children style="h3" description="false" depth="1" sort="weight" %}}
