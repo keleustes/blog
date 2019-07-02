@@ -87,6 +87,14 @@ kubectl get all act --all-namespaces
 - `master` site manifests which require the inline function but autovar feature is not used.
 - `autovar` autovar feature of kustomize is enabled, hence no need for 3000 lines of vars and varreferences:
 
+### Important Issues and Release Notes
+
+#### kubernetes
+
+The definition of the CRD will soon be using v1 instead of v1beta1. The schema will be mandatory and the handling of the unknown field will change.
+
+- [CRD schema validation](https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#specifying-a-structural-schema)
+- [Pruning Unknown Field](https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#pruning-versus-preserving-unknown-fields)
 
 <!--more-->
 

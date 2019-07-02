@@ -94,6 +94,7 @@ The following links are trying to address similar problems
     - [v3 tag](https://github.com/keleustes/armada-operator/blob/master/pkg/helmv3/chart_manager.go#L15)
     - [chart struct in helmv3](https://github.com/keleustes/armada-operator/blob/master/pkg/helmv3/chart_manager.go#L38)
 
+
 ### Multithreading and Concurrency
 
 - One Armada Operator per namespace: TBD
@@ -126,6 +127,19 @@ make
 
 - `master` supports kubernetes 1.14.x and helm 2.13.x
 - `kube15` supports kubernetes 1.15.x and helm 2.14.x
+- `helmv3` supports kubernetes 1.15.x and helm 3.0.x beta1
+
+### Important Issues and Release Notes
+
+#### kubernetes
+
+- [CRD schema validation](https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#specifying-a-structural-schema)
+
+#### helm
+
+- [Rendering Engine](https://github.com/helm/helm/issues/5826). Seems that the rendering engine can not be
+  modified in helmV3. That ability of helmv2 is used to render the object and add an owner.
+
 
 <!--more-->
 
