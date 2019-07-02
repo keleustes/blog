@@ -113,5 +113,19 @@ deployed through `helm install` or `helm upgrade` are ready to be used.
 - [armada-operator](https://github.com/keleustes/armada-operator)
 - [airship-armada](https://github.com/airshipit/armada)
 
+## Build armada-operator
+
+### Build
+
+```bash
+git clone -b kube15 https://github.com/keleustes/armada-operator.git
+make
+```
+
+### Branches
+
+- `master` supports kubernetes 1.14.x and helm 2.13.x
+- `kube15` supports kubernetes 1.15.x and helm 2.14.x
+
 <!--more-->
 

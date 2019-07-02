@@ -43,12 +43,27 @@ Currently rely on replacing the standard StatefulSet by an Argo Rollout deployem
 - [Readme](https://github.com/keleustes/oslc-operator/blob/master/README.md)
 - [Argo CD](https://github.com/argoproj/argo-cd)
 - [Argo Rollout](https://github.com/argoproj/argo-rollouts)
+- [WeaveWorks Flagger](https://github.com/weaveworks/flagger)
 
 {{< youtube id="yeVkTTO9nOA" autoplay="false" >}}
 
 ## Associated GIT Repos
 
 - [oslc-operator](https://github.com/keleustes/oslc-operator)
+
+## Build oslc-operator
+
+### Build
+
+```bash
+git clone -b kube15 https://github.com/keleustes/oslc-operator.git
+make
+```
+
+### Branches
+
+- `master` supports kubernetes 1.14.x and helm 2.13.x
+- `kube15` supports kubernetes 1.15.x and helm 2.14.x
 
 <!--more-->
 

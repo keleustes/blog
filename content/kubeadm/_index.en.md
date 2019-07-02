@@ -26,15 +26,19 @@ This is not a "replacement" for airship promenade. This POC merely aims to highl
 
 ### Certificates Management
 
-- TBD
+Promenade is currently in charge of deploying certificates. The teams implementating the cluster-api have different approaches:
+
+- [Azure Cluster API implementation](https://github.com/kubernetes-sigs/cluster-api-provider-azure/blob/master/pkg/cloud/azure/services/config/startupscript.go#L70)
 
 ### Kubernetes Software Upgrade
 
-- TBD
+Promenade is installing a set of packages:
+
+- [Azure Package Installation](https://github.com/kubernetes-sigs/cluster-api-provider-azure/blob/master/pkg/cloud/azure/services/config/controlplane.go#L117)
 
 ### kubelet, kubeadm and kubectl upgrades
 
-- TBD
+- [AWS Cluster API](https://github.com/kubernetes-sigs/cluster-api-provider-aws/blob/master/pkg/cloud/aws/services/ec2/instances.go#L201)
 
 ## Documentation
 

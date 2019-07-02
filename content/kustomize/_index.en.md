@@ -72,6 +72,24 @@ No parameters & templates. The same property that makes kustomize applications s
 - [kustomize](https://github.com/keleustes/kustomize)
 - [airship-deckhand](https://github.com/airshipit/deckhand)
 
+## Build kustomize
+
+### Build
+
+```bash
+git clone -b allinone https://github.com/keleustes/kustomize.git
+GO111MODULE=on go build -o $HOME/bin/kustomize cmd/kustomize/main.go
+```
+
+### Branches
+
+- `master` is aligned with upstream/master
+- `inline` contains the enhanced inlining, for instance tree inlining and parent-inline
+- `autov` contains the automatic variable declaration
+- `diamond` contains the ability to have diamond import of the base folder.
+  Important for the tree reorganization
+- `slicecase` contains small bug fix.
+- `allinone` is built out of all the above branches.
 
 <!--more-->
 
