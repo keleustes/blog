@@ -64,6 +64,30 @@ This is not a "replacement" for airship treasuremap. This POC merely aims at hig
 - [airship-treasuremap](https://github.com/keleustes/airship-treasuremap)
 - [airship-treasuremap](https://github.com/airshipit/treasuremap)
 
+## Test airsloop site rendering
+
+### Build
+
+Check that your configuration is correct. Invokes kustomize build and compare the output with
+a previously generated output. Be sure to have build the `allinone` version of kustomize.
+
+```bash
+make rendering-test-airsloop
+```
+
+### Deploy the CRDs without operators
+
+```bash
+make deploy-airsloop
+kubectl get all act --all-namespaces
+```
+
+### Branches
+
+- `master` site manifests which require the inline function but autovar feature is not used.
+- `autovar` autovar feature of kustomize is enabled, hence no need for 3000 lines of vars and varreferences:
+
+
 <!--more-->
 
 {{%children style="h3" description="false" depth="1" sort="weight" %}}
