@@ -73,7 +73,7 @@ The following links are trying to address similar problems
   kind of extensive: [roles](https://github.com/keleustes/armada-operator/blob/master/chart/templates/role.yaml)
 - Deployment of the operator itself: The operator is deployed in kubernetes itself. If using helm, we have some
   kind of [chicken-egg issue](https://github.com/keleustes/armada-operator/blob/master/Makefile#L87). 
-  Otherwise the operator can be deployed using [simple kubectl](https://github.com/keleustes/airship-treasuremap/blob/master/Makefile#L2)
+  Otherwise the operator can be deployed using [simple kubectl](https://github.com/keleustes/treasuremap/blob/master/Makefile#L2)
 
 ### HelmV2 vs HelmV3
 
